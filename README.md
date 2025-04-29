@@ -27,6 +27,14 @@ This repository contains the backend implementation for the Full-Stack SDE Inter
 
 ---
 
+## System Flow
+
+## System Flow Diagram
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3464ef19-1da4-4a46-b8a8-195cd7958fb0" alt="System Flow" width="600"/>
+</p>
+
 
 ---
 
