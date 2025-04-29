@@ -1,0 +1,53 @@
+SDE Assignment – Travel Itinerary Backend System
+
+1. Database Design
+
+- Used SQLAlchemy to create models for:
+  - Itinerary: Full trip info
+  - Day: Each day of the trip
+  - Accommodation: Hotel details
+  - Transfer: Travel between places
+  - Activity: Things to do
+
+- Each itinerary has multiple days
+- Each day can have activities, transfers, and accommodations
+- Relationships and cascading deletes are set up
+
+2. API with FastAPI
+
+- Built using FastAPI and Pydantic
+- SQLite used for database
+- Two main endpoints:
+  - POST /itineraries/ → Add a new itinerary
+  - GET /itineraries/{id} → View a specific itinerary
+
+Example POST Request:
+{
+  "name": "Beach Trip",
+  "region": "Phuket",
+  "nights": 3,
+  "days": [...]
+}
+
+Example GET Response:
+{
+  "id": 1,
+  "name": "Beach Trip",
+  ...
+}
+
+3. MCP Server
+
+- GET /recommendations/{nights}
+- Returns suggested itineraries for given number of nights
+
+4. Sample Data
+
+- Added example itineraries for Phuket and Krabi (2 to 8 nights)
+- Includes hotel names, transfers, and local activities
+
+5. Summary
+
+- Clean and modular code
+- Proper validations and error handling
+- Recommender endpoint working
