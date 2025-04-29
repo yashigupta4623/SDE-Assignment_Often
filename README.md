@@ -27,8 +27,6 @@ This repository contains the backend implementation for the Full-Stack SDE Inter
 
 ---
 
-## System Flow
-
 ## System Flow Diagram
 
 <p align="center">
